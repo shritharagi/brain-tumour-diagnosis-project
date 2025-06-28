@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+</head>
+<body>
+    <h1>Diagnosis Result</h1>
+    <p><strong>Prediction:</strong> {{ result }}</p>
+    <img src="{{ url_for('static', filename='uploads/' + image_file) }}" alt="Uploaded MRI" width="300">
+    <br><br>
+    <a href="/">Upload Another Image</a>
+</body>
+</html>
